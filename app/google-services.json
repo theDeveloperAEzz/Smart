@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "385906278990",
+    "firebase_url": "https://smart-8a21d.firebaseio.com",
+    "project_id": "smart-8a21d",
+    "storage_bucket": "smart-8a21d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385906278990:android:90991760238b6da4",
+        "android_client_info": {
+          "package_name": "com.example.thedeveloper.smart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385906278990-rg71g6anbctaplp0jpk3opvqua8p2qjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO8ZAVmjP-k6uYZrvt2Lrw_Eudp0WcQLA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

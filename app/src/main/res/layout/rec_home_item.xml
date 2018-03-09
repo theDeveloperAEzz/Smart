@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:paddingBottom="50dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/login_card"
+        style="@style/SelectableItemTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="4dp"
+        tools:ignore="KeyboardInaccessibleWidget,ObsoleteLayoutParam">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/author_name"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/author_name"
+                android:padding="5dp"
+                android:textSize="13dp"
+                tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+
+            <TextView
+                android:id="@+id/sup_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/author_name"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/status"
+                android:padding="5dp"
+                android:textSize="13dp"
+                tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+
+            <ScrollView
+                android:id="@+id/content_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/author_name">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/num_of_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/content_scroll"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp"
+                tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/content_scroll"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="SHARE"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText,RtlCompat,SpUsage" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

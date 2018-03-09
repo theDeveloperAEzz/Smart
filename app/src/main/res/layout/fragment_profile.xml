@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thedeveloper.smart.fragment.ProfileFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_profile_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/my_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/my_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_name"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="RtlCompat,SpUsage" />
+
+            <TextView
+                android:id="@+id/how_many_posts_i_shared"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/my_email"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/how_many_persons_shared_my_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/how_many_posts_i_shared"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/my_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/how_many_persons_shared_my_posts"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>
